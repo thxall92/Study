@@ -104,7 +104,7 @@ function connect() {
     } else {
 
       // 두번째 부턴 이제 기존 값 업데이트 해주는 단계~
-      let pp = { price: msg[1], cnt: msg[2], amount: msg[3], ix: msg[4] }
+      let pp = { price: msg[1][0], cnt: msg[1][1], amount: msg[1][2] }
       if (!pp.cnt) {
         let found = true
         if (pp.amount > 0) {
